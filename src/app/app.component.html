@@ -1,6 +1,11 @@
 <header>
-    <a href="#" routerLink="/home" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
-    <a href="#" routerLink="/users" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Users</a>
-    <a href="#" routerLink="/users/user-1" routerLinkActive="active">User 1</a>
+    <a routerLink="/home" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+        Home
+    </a>
+
+    <a routerLink="/users" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+        Users
+    </a>
+    <a href="#" [routerLink]="['/users', '123', 'Anano']" routerLinkActive="active">user(anano,withId:123)</a>
 </header>
 <router-outlet></router-outlet>

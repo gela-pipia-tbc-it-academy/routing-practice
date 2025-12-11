@@ -10,9 +10,9 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent, title: 'Home Page' },
   { path: 'users', component: UsersComponent, title: 'Users Page' },
   {
-    path: 'users/user-1',
+    path: 'users/:id/:name',
     component: UserOneComponent,
-    title: "User One's Page",
+    title: "User Page",
   },
   { path: '**', component: NotFoundComponent, title: 'Page Not Found' },
 ];
